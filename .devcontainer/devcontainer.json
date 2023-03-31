@@ -3,7 +3,8 @@
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
-            "VARIANT": "bullseye"
+            "VARIANT": "bullseye",
+            "VERSION": "3.10"
         }
     },
     "features": {
@@ -33,6 +34,7 @@
         }
     },
     "forwardPorts": [
+        6379,
         8000
     ],
     "postCreateCommand": "",
