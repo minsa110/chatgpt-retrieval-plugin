@@ -2,7 +2,7 @@
 set -e
 poetry env use 'python3.10'
 poetry install --no-root
-cat > .env << EOF &&\
+cat > .env << EOF &&
 export DATASTORE=redis
 export BEARER_TOKEN=footoken
 export OPENAI_API_KEY=''
