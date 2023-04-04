@@ -37,6 +37,7 @@
         6379,
         8000
     ],
+    "postCreateCommand": "sudo chmod +x ./.devcontainer/postcreate.sh && ./.devcontainer/postcreate.sh",
     "postAttachCommand": "sudo chmod +x ./.devcontainer/postattach.sh && ./.devcontainer/postattach.sh",
     "remoteUser": "vscode",
     "hostRequirements": {
