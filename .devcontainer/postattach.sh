@@ -7,5 +7,6 @@ export DATASTORE=redis
 export BEARER_TOKEN=footoken
 export OPENAI_API_KEY=''
 EOF
+wait
 source .env
 docker compose -f ./examples/docker/redis/docker-compose.yml up -d
