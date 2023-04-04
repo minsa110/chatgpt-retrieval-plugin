@@ -37,7 +37,7 @@
         6379,
         8000
     ],
-    "postAttachCommand": "sudo chmod +x ./.devcontainer/postattach.sh && ./.devcontainer/postattach.sh",
+    "postAttachCommand": "sudo chmod +x ./.devcontainer/postattach.sh && ./.devcontainer/postattach.sh && docker compose -f ./examples/docker/redis/docker-compose.yml up -d",
     "remoteUser": "vscode",
     "hostRequirements": {
         "memory": "8gb"
